@@ -189,7 +189,7 @@ function abrazol() {
         }
     }
     console.log(input);
-    for (let i = 100; i > -100; i--) {
+    for (let i = -100; i < 100; i+=0.1) {
         x = i;
         points.push(i);
         points.push(eval(input));
