@@ -10,6 +10,7 @@ let points = [];
 let ps = [];
 let currentP;
 let currentPt;
+let allowedKeys = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "+", "-", "/", "*", "(", ")", "x", "|"];
 
 function setup() {
     grid = createCanvas(window.innerWidth, window.innerHeight);
@@ -156,6 +157,30 @@ function draw() {
     menu.background("rgba(255, 255, 255, 0.5)");
     menu.text("f(x)=", 3, 15);
     image(menu, 0, 0);
+}
+
+function keyPressed() {
+    if (keyCode === BACKSPACE) {
+        if (currentP.html().length > 0) {
+            currentP.html(currentP.html().slice(0, -1), false);
+        }
+        else {
+            if (ps.length > 1) {
+                ps.pop();
+                currentP = ps[ps.length-1][1];
+                currentP.html(currentP.html().slice(0, -1), false);
+            }
+        }
+    }
+    if (keyCode === ENTER) {
+        abrazol();
+    }
+}
+
+function keyTyped() {
+    if (allowedKeys.includes(key)) {
+        currentP.html(key, true);
+    }
 }
 
 function getPosition(string, subString, index) {
