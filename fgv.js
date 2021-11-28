@@ -121,6 +121,12 @@ function setup() {
             }
         }
     });
+    let openingBracketButton = createButton("(");
+    openingBracketButton.position(50, 450);
+    openingBracketButton.mousePressed(function() {currentP.html("(", true)});
+    let closingBracketButton = createButton(")");
+    closingBracketButton.position(75, 450);
+    closingBracketButton.mousePressed(function() {currentP.html(")", true)});
 }
 
 function draw() {
