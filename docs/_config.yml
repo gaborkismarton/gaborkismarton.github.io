@@ -21,18 +21,17 @@
 title: Gábor Kismárton
 email: kismarton.g@gmail.com
 description: Portfolio Site # this means to ignore newlines until "baseurl:"
-baseurl: /gaborkismarton.github.io/ # the subpath of your site, e.g. /blog
-url: https://gaborkismarton.github.io # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: ""
 twitter_username: gaborkismarton
 github_username:  gaborkismarton
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
-
-minimal_mistakes_skin: "dark"
 
 author:
   name: "Gábor Kismárton"
