@@ -28,7 +28,7 @@ github_username:  gaborkismarton
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal-mistakes_skin: "dark"
+minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
