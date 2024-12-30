@@ -20,17 +20,18 @@
 
 title: Gábor Kismárton
 email: kismarton.g@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Portfolio site of Gábor Kismárton
+description: "" # this means to ignore newlines until "baseurl:"
 baseurl: /gaborkismarton.github.io/ # the subpath of your site, e.g. /blog
 url: https://gaborkismarton.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gaborkismarton
 github_username:  gaborkismarton
 
 # Build settings
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal-mistakes_skin: "dark"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
