@@ -20,7 +20,7 @@
 
 title: Gábor Kismárton
 email: kismarton.g@gmail.com
-description: "" # this means to ignore newlines until "baseurl:"
+description: Portfolio Site # this means to ignore newlines until "baseurl:"
 baseurl: /gaborkismarton.github.io/ # the subpath of your site, e.g. /blog
 url: https://gaborkismarton.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gaborkismarton
@@ -28,10 +28,20 @@ github_username:  gaborkismarton
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+
+minimal_mistakes_skin: "dark"
+
+author:
+  name: "Gábor Kismárton"
+  bio: "Physicist-Engineering Student at Budapest University of Technology and Economics"
+  location: "Budapest, Hungary"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gaborkismarton"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
