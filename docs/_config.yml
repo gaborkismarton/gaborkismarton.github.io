@@ -36,7 +36,6 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll-youtube
 
 site.locale: hu-HU
 
