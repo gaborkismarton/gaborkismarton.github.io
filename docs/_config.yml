@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Portfolio page of Gábor Kismárton
 baseurl: "" # the subpath of your site, e.g. /blog
 url: ""
-github_username:  gaborkismarton
+github_username: gaborkismarton
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
@@ -42,7 +42,10 @@ site.locale: hu-HU
 author:
   avatar: "/assets/images/cv-small.jpeg"
   name: "Gábor Kismárton"
-  bio: "Physicist-Engineering Student at Budapest University of Technology and Economics"
+  bio: |
+    Physicist-Engineering Student at Budapest University of Technology and Economics
+
+    Data Scientist at Advantek Laboratories
   location: "Budapest, Hungary"
   links:
     - label: "GitHub"
@@ -61,7 +64,7 @@ defaults:
       author_profile: true
       related: true
       show_date: true
-  
+
   # _pages
   - scope:
       path: ""
@@ -69,7 +72,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-  
+
   # _foo
   - scope:
       path: ""
